@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Open+Sans+Condensed:wght@300&family=Poppins:wght@200;300;400&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --body-font: 'Poppins', sans-serif;
+    --primary-font: 'Open Sans Condensed', sans-serif;
+    --secondary-font: 'Abril Fatface', cursive;
+}
+
+body {
+    font-family: var(--body-font);
+    background: #111;
+    color: #f4f4f4;
+    overflow-x: hidden;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #f4f4f4;
+}
+
+img {
+    width: 100%;
+}
+
+.container {
+    max-width: 1100px;
+    padding: 0 40px;
+    margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+}
+.grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+

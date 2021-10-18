@@ -1,0 +1,112 @@
+.history {
+    padding-top: 80px;
+    background-image: url(../img/hitory-bg.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 25rem;
+}
+
+.history-bg p {
+    position: absolute;
+    letter-spacing: 35px;
+    font-family: var(--secondary-font);
+    font-size: 14rem;
+    color: rgba(255,255,255,0.1);
+    right: 0;
+    margin-top: -35px;
+    z-index: -1;
+}
+
+.history-content {
+    transform: translateX(25rem);
+}
+
+.history-title p {
+    position: relative;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: var(--primary-font);
+    color: #9D9D9D;
+    letter-spacing: 2px;
+    transform: translateX(40px);
+}
+
+.history-title p::before {
+    position: absolute;
+    content: '';
+    width: 25px;
+    height: 1px;
+    background: #9D9D9D;
+    left: -40px;
+    transform: translateY(11px);
+}
+
+.history-head h1 {
+    padding: 30px 0;
+    font-family: var(--secondary-font);
+    letter-spacing: 2px;
+}
+
+.histo-description p {
+    width: 50%;
+    padding-bottom: 10px;
+    opacity: .6;
+    font-size: 14px;
+    transform: translateX(2rem);
+}
+
+@media(max-width: 768px) {
+    .history-content {
+        transform: translateX(21rem);
+    }
+}
+
+@media(max-width: 736px) {
+    .history {
+        background-size: 20rem;
+    }
+    .history-content {
+        transform: translateX(19rem);
+    }
+
+    .histo-description p {
+        font-size: 10px;
+    }
+}
+
+@media(max-width: 640px) {
+    .history {
+        background-size: 19rem;
+    }
+
+    .history-bg p {
+        font-size: 7rem;
+        right: -23px;
+    }
+
+    .history-content {
+        transform: translateX(14rem);
+    }
+
+    .histo-description p {
+        font-size: 10px;
+    }
+}
+
+@media(max-width: 414px) {
+
+    .history-bg p {
+        font-size: 6rem;
+        right: -31px;
+        letter-spacing: 20px;
+    }
+
+    .history-content {
+        transform: translateX(2rem);
+    }
+
+    .histo-description p {
+        width: 80%;
+        font-size: 11px;
+    }
+}
